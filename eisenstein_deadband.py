@@ -71,7 +71,7 @@ if __name__ == "__main__":
     for _ in range(n):
         x = random.uniform(-5, 5)
         y = random.uniform(-5, 5)
-        (p0_ok, _), p0_err = deadband_p0_eisenstein(x, y)
+        p0_ok, p0_err = deadband_p0_eisenstein(x, y)[0], deadband_p0_eisenstein(x, y)[2]
         p1_ok, p1_err = deadband_p1_eisenstein(x, y)
         if p0_ok: p0_pass += 1
         if p1_ok: p1_pass += 1
