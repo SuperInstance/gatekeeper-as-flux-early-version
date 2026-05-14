@@ -1,17 +1,17 @@
-# Gatekeeper-as-FLUX
+# ⚰️ Archived — gatekeeper-as-flux
 
-> Bridge between Oracle1's Gatekeeper policies and FM's FLUX-C bytecode.
+> **This repo is archived.** It was an early experiment that was never fully developed.
 
-Compiles PLATO gate policies to FLUX-C directly. 4 standard policies → 16 instructions + ALLOW.
+## Why Archived
 
-## Usage
-```python
-python3 bridge.py
-```
+Empty gatekeeper-FLUX bridge placeholder — no code was written.
 
-## How it works
-- Gatekeeper: `allow | deny | remediate`
-- FLUX-C: `PASS | PANIC | snap nearest`
-- Bridge: Policy IR → FLUX-C opcodes
+## Can I Use This Code?
 
-See research/GATEKEEPER-AS-FLUX-MESH.md for the full architecture.
+If there's code here, fork it. Run with it. The ideas were real — the implementations just didn't land.
+
+## Fleet Context
+
+Part of the [Cocapn fleet](https://github.com/SuperInstance). The fleet now uses tile lifecycle, Lamport clocks, and simulation-first coordination.
+
+Archived: 2026-05-13
